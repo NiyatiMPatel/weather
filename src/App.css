@@ -1,0 +1,170 @@
+.container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+}
+
+.wrapper {
+ background: var(--liner-background);
+ width: 80%;
+ border-radius: 40px;
+ padding: 2rem;
+}
+
+.weather-title {
+ margin: 0;
+ text-align: center;
+ color: var(--heading-color);
+}
+
+.searchbar {
+ margin: 1rem 0
+}
+
+.searchbar input {
+ width: 100%;
+ border-radius: 50px;
+ padding: 0.6rem 1.2rem;
+ border: 2px solid #ccc;
+ font-size: 1.3rem;
+ color: var(--text-color);
+ text-transform: capitalize;
+}
+
+.searchbar input:focus {
+ outline: none;
+ border-color: #ccc;
+ box-shadow: none;
+}
+
+.searchbar input::placeholder {
+ color: var(--text-color);
+ opacity: 1;
+ /* Firefox */
+}
+
+.searchbar input::-ms-input-placeholder {
+ /* Edge 12 -18 */
+ color: var(--text-color);
+}
+
+.display-info {
+ background: white;
+ border-radius: 25px;
+ padding: 2rem;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-transform: capitalize;
+ color: var(--text-color);
+}
+
+.city-info {
+ text-align: center;
+ margin-bottom: 1rem;
+}
+
+.info {
+ width: 100%;
+ display: flex;
+ justify-content: space-evenly;
+}
+
+.temperature-info>p {
+ font-size: 2rem;
+}
+
+.temp-detail {
+ margin-left: 1rem;
+}
+
+.temp-detail p:first-child {
+ font-weight: 700;
+}
+
+.temp-detail p:not(:last-child) {
+ margin-bottom: 0.5rem;
+}
+
+.icon {
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 1rem 0;
+}
+
+.icon img {
+ background: var(--heading-color);
+ width: 100px;
+ height: 100px;
+ border-radius: 50%;
+}
+
+.detail-info span {
+ display: block;
+}
+
+/* Extra small devices (portrait tablets and large phones, 481px and up) */
+@media only screen and (min-width: 481px) {
+ .wrapper {
+  width: 75%;
+  padding: 2rem 3rem;
+ }
+}
+
+/* Small devices (portrait tablets and large phones, 576 and up) */
+@media only screen and (min-width: 576px) {
+ .wrapper {
+  width: 65%;
+ }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+ .wrapper {
+  width: 55%;
+  padding: 2rem 5rem;
+ }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+ .wrapper {
+  width: 45%;
+ }
+
+ .display-info {
+  padding-bottom: 4rem;
+ }
+
+ .temperature-info>p {
+  font-size: 3rem;
+ }
+
+ .details-info p {
+  font-size: 2rem;
+ }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+ .wrapper {
+  width: 40%;
+ }
+
+ .info {
+  justify-content: space-between;
+ }
+
+}
+
+/* Extra extra large devices (large laptops and desktops, 1400px and up) */
+@media only screen and (min-width: 1400px) {
+ .wrapper {
+  width: 25%;
+ }
+
+}
